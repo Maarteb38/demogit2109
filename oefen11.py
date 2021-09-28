@@ -19,3 +19,4 @@ for x in range(len(naamarray)):
     print(naamarray[x])
     print("de kerstman weet dat je naam dit aantal letters telt:")
     print(len(naamarray[x]))
+    print("hallo")
