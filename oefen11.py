@@ -1,10 +1,10 @@
 import pandas as pd
 
-# Data inladen 
+# Data Inladen
 data = pd.read_csv('random123.csv')
 print(data.head(n=10))
 
-# Data schoonmaken
+# Data Schoonmaken
 data.columns = data.columns.str.upper().str.replace('_', '')
 print(data.head())
 
