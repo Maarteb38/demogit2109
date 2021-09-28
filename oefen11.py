@@ -1,17 +1,19 @@
 import pandas as pd
 
+class kerstkaart:
+    naam = "nvt"
+    def feestwensen(self):
+        print("vrolijk feestdagen!")
+
+
+
 # Data inladen
 data = pd.read_csv('random123.csv')
 
-print("wat wil je weten naam=N of generation=C?")
-vraag = str(input())
-Name = "N" or "n"
-Cate = "C" or "c"
-
-if vraag==Name:
-    print(data["name"])
-if vraag==Cate:
-    print(data["generation"])
-# Data schoonmaken
-data.columns = data.columns.str.upper().str.replace('_', '')
-
+#iedereen een vrolijk kersfeest wensen
+naamarray = data['name']
+for x in range(len(naamarray)):
+    kerstkaart.feestwensen(x)
+    print(naamarray[x])
+    print("de kerstman weet dat je naam dit aantal letters telt:")
+    print(len(naamarray[x]))
