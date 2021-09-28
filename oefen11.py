@@ -2,13 +2,16 @@ import pandas as pd
 
 # Data inladen
 data = pd.read_csv('random123.csv')
-print(data.head(n=10))
 
+print("wat wil je weten naam=N of generation=C?")
+vraag = str(input())
+Name = "N" or "n"
+Cate = "C" or "c"
+
+if vraag==Name:
+    print(data["name"])
+if vraag==Cate:
+    print(data["generation"])
 # Data schoonmaken
 data.columns = data.columns.str.upper().str.replace('_', '')
-print(data.head())
 
-data = data.set_index('name')
-data=data.drop(['name'], axis=1)
-data=data.drop(['legendary'], axis=1)
-print(data.head(10))
