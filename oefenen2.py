@@ -1,10 +1,13 @@
 class Meegeven:
-    def Iets(a):
-        if a >= 1:
-            a = a * a
-            return print(a)
-        else:
-            return print("helaas weinig")
+    goed = []
+    def Functie(goed, a):
+        print(goed)
 
+print("getallen array 3")
+getar = []
+for x in range(3):
+    getar.append(int(input()))
+print("wat is het zoekgetal?")
+getget = int(input())
 
-Meegeven.Iets(int(input()))
+Meegeven.Functie(getar,getget)
