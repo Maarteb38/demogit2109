@@ -1,7 +1,8 @@
 class Meegeven:
     goed = []
     def Functie(goed, a):
-        print(goed)
+        aantalx = goed.count(a)
+        print(aantalx)
 
 print("getallen array 3")
 getar = []
