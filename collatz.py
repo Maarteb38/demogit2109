@@ -18,8 +18,19 @@ while laag > 4:
         laag = laag/2
     else:
         laag = laag*3+1
-x = [1,2,3,4,5]
-y = [4,5,6,7,8]
+
+laag2 = getal+27
+x = []
+y = []
+
+while laag2 > 4:
+    x.append(laag2)
+    y.append(u)
+    u += 1
+    if laag2 % 2 == 0:
+        laag2 = laag/2
+    else:
+        laag2 = laag*3+1
 
 plt.plot(rijx,rij)
 plt.plot(x,y)
