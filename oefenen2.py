@@ -3,6 +3,7 @@ class Meegeven:
     def Functie(goed, a):
         aantalx = goed.count(a)
         print(aantalx)
+
 print("hoelang is het array?")
 length = int(input())
 print("getallen array van", length,"lang")
